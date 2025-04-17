@@ -30,26 +30,6 @@ A smart disaster detection and resource allocation platform powered by AI — bu
 
 ---
 
-## 📁 Project Structure
-
-```
-DisasterPro/
-├── backend/
-│   ├── app.py                  # Flask API backend
-│   ├── models/                 # Trained tweet & image models
-│   └── utils/                  # Preprocessing, resource allocation, etc.
-├── frontend/
-│   └── src/
-│       ├── components/         # React components (image grid, resource page)
-│       ├── pages/              # analyze-tweet.tsx, resource-management.tsx
-│       └── App.tsx
-├── Disaster_images/           # Folder of disaster images
-├── FinalDataset.csv           # Dataset with image path, type, severity
-└── README.md
-```
-
----
-
 ## 🧪 Machine Learning Models
 
 ### 1. **Tweet Classifier**
@@ -76,11 +56,11 @@ DisasterPro/
 
 ## 💻 Setup & Run
 
-### 📦 Backend (Flask)
+### 📦 Frontend (React)
 ```bash
 cd backend
-pip install -r requirements.txt
-python app.py
+npm install
+npm start
 ```
 
 ### 🖥️ Frontend (React)
@@ -90,27 +70,14 @@ npm install
 npm start
 ```
 
----
-
-## 🔧 API Endpoints
-
-| Endpoint            | Method | Description |
-|---------------------|--------|-------------|
-| `/analyze-tweet`    | POST   | Classifies a tweet as disaster or not |
-| `/get-images`       | POST   | Fetches image list based on tweet location |
-| `/analyze-image`    | POST   | Returns type, severity, and resources for an image |
+### 📦 Backend (Flask)
+```bash
+cd project/src
+python app.py
+```
 
 ---
 
-## 🧠 Dataset
-
-- **Images**: 13,557 labeled disaster images
-- **Metadata**: `FinalDataset.csv`
-  - `image_path`
-  - `disaster_type`
-  - `severity_label`
-
----
 
 ## 📸 Frontend Features
 
@@ -130,12 +97,6 @@ npm start
 
 ---
 
-## 👨‍💻 Author
-
-**Vishnu** – Building intelligent systems for public good.  
-Feel free to reach out or contribute!
-
----
 
 ## 📜 License
 
