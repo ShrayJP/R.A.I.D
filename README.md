@@ -65,7 +65,7 @@ npm start
 
 ### 🖥️ Frontend (React)
 ```bash
-cd frontend
+cd project
 npm install
 npm start
 ```
